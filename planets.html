@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planets</title>
+    <style>
+      .planet-card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin: 20px;
+        max-width: 400px;
+        width: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+      }
+
+      .planet-card h3 {
+        margin-top: 0;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .planet-card p {
+        margin: 10px 0;
+        font-size: 16px;
+      }
+
+      .planet-card p:first-of-type {
+        margin-top: 0;
+      }
+
+      .planet-card p:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .sort-button {
+        background-color: #ffcc00;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 20px;
+      }
+
+      .sort-button:hover {
+        background-color: #ffc107;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="size-sort" class="sort-button">Sort by size</button>
+    <button id="population-sort" class="sort-button">Sort by population</button>
+    <div id="planets-container"></div>
+    <script src="scriptPlanet.js"></script>
+  </body>
+</html>
